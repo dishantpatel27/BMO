@@ -52,7 +52,7 @@ public class JerseyConfig extends ResourceConfig {
         config.setTitle("BMO TEST");
         config.setVersion("v1");
         config.setContact("Dishant Patel");
-        config.setSchemes(new String[] { "http" });
+        config.setSchemes(new String[] { "https" });
         config.setBasePath(this.apiPath);
         config.setResourcePackage("com.bmo.test.rest");
         config.setPrettyPrint(true);
