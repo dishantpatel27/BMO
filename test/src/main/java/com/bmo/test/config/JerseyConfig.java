@@ -26,6 +26,7 @@ public class JerseyConfig extends ResourceConfig {
 
     public JerseyConfig() {
         // Register endpoints, providers, ...
+        this.register(CORSResponseFilter.class);
         this.registerEndpoints();
     }
 

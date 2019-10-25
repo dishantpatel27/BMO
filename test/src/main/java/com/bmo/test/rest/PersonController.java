@@ -29,8 +29,8 @@ public class PersonController {
     @GET
     @Path("/getall")
     @Produces(MediaType.APPLICATION_JSON)
-    public ResponseEntity<List<Person>> getPersonsData(){
-        return new ResponseEntity<List<Person>>(personRepo.findAll(), HttpStatus.OK);
+    public Response getPersonsData(){
+        return Response.status(Response.Status.OK).entity(personRepo.findAll()).build();
     }
 
     @POST
